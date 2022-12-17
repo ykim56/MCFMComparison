@@ -1,13 +1,15 @@
+!
+!  SPDX-License-Identifier: GPL-3.0-or-later
+!  Copyright (C) 2019-2022, respective authors of MCFM.
+!
       function GG_GGG(IHEL)
-C  
-C RETURNS AMPLITUDE SQUARED SUMMED/AVG OVER COLORS
-C FOR PROCESS : g g -> g g g (h)
-C  
+
+c RETURNS AMPLITUDE SQUARED SUMMED/AVG OVER COLORS
+c FOR PROCESS : g g -> g g g (h)
+
       IMPLICIT NONE
       include 'types.f'
       include 'constants.f'
-      include 'nf.f'
-      include 'mxpart.f'
       real(dp) GG_GGG
       integer, parameter::ngluons=5
 
@@ -19,8 +21,8 @@ C
       integer::I,J
 
 c      logical::CHECKS
-c      DATA CHECKS/.false./ 
-       
+c      DATA CHECKS/.false./
+
 c--   permutations
       integer,parameter::IP(ngluons,6)=reshape((/
      & 1,2,3,4,5,
@@ -28,7 +30,7 @@ c--   permutations
      & 1,3,2,4,5,
      & 1,3,4,2,5,
      & 1,4,2,3,5,
-     % 1,4,3,2,5/),(/ngluons,6/))
+     & 1,4,3,2,5/),(/ngluons,6/))
 
 c--   color matrix
 c     c_ij= (N^2-1)*N^3/4*CIJ/2 in the GM normalization
@@ -40,12 +42,11 @@ c     c_ij= (N^2-1)*N^3/4*CIJ/2 in the GM normalization
      & 2,0,4,8,2,4,
      & 2,4,0,2,8,4,
      & 0,2,2,4,4,8/),(/6,6/))
-      include 'cplx.h'
 
 
-C-----
-C  BEGIN CODE
-C-----
+c-----
+c  BEGIN CODE
+c-----
 
       GG_GGG = zip
 
@@ -61,11 +62,11 @@ C-----
          call iperm(IHEL,PERM,IHELX,NGLUONS)
 
 
-         Z(I)=amp_h5g(PERM,IHELX) 
+         Z(I)=amp_h5g(PERM,IHELX)
 
-c
+
 c    check on the properties of the amplitudes
-c
+
 c         if (checks) then
 c         call checker(z,i,perm,ihelx)
 c         endif
@@ -73,22 +74,22 @@ c=============================================================
 
          ENDDO !sum over permutations
 
-c
+
 c   sum over color
-c         
+
          DO J = 1, 6
             ZTEMP = czip
             DO I = 1, 6
                ZTEMP = ZTEMP + Z(I)*CIJ(I,J)
             ENDDO
-            GG_GGG =GG_GGG+real(ZTEMP*conjg(Z(J)))  
-         ENDDO   
+            GG_GGG =GG_GGG+real(ZTEMP*conjg(Z(J)))
+         ENDDO
 
 
 
 c     Overall normalization of CIJ
-         GG_GGG=GG_GGG*XN**3*(XN**2-one)/four 
-         
+         GG_GGG=GG_GGG*XN**3*(XN**2-one)/four
+
       RETURN
       END
 
