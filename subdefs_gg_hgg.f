@@ -1,8 +1,9 @@
+
       real(dp):: dummy(-nf:nf,-nf:nf)
-      
-************************************************************************
-* DEFINITIONS FOR EIKONALS WITH p7                                     *
-************************************************************************
+
+c***********************************************************************
+c DEFINITIONS FOR EIKONALS WITH p7                                     *
+c***********************************************************************
       real(dp)::
      & sub17_2(4),sub17_2v,
      & msq17_2(-nf:nf,-nf:nf),msq17_2v(-nf:nf,-nf:nf),
@@ -34,23 +35,19 @@
      & msq_struc27_5(8,-1:1,-1:1),msq_struc27_5v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub57_1(4),sub57_1v,
-     & msq57_1(-nf:nf,-nf:nf),msq57_1v(-nf:nf,-nf:nf),
+     & sub57_1(4),sub57_1v,msq57_1v(-nf:nf,-nf:nf),
      & msq_struc57_1(8,-1:1,-1:1),msq_struc57_1v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub67_2(4),sub67_2v,
-     & msq67_2(-nf:nf,-nf:nf),msq67_2v(-nf:nf,-nf:nf),
+     & sub67_2(4),sub67_2v,msq67_2v(-nf:nf,-nf:nf),
      & msq_struc67_2(8,-1:1,-1:1),msq_struc67_2v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub67_1(4),sub67_1v,
-     & msq67_1(-nf:nf,-nf:nf),msq67_1v(-nf:nf,-nf:nf),
+     & sub67_1(4),sub67_1v,msq67_1v(-nf:nf,-nf:nf),
      & msq_struc67_1(8,-1:1,-1:1),msq_struc67_1v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub57_2(4),sub57_2v,
-     & msq57_2(-nf:nf,-nf:nf),msq57_2v(-nf:nf,-nf:nf),
+     & sub57_2(4),sub57_2v,msq57_2v(-nf:nf,-nf:nf),
      & msq_struc57_2(8,-1:1,-1:1),msq_struc57_2v(8,-1:1,-1:1)
 
       real(dp)::
@@ -63,9 +60,9 @@
      & msq67_5(-nf:nf,-nf:nf),msq67_5v(-nf:nf,-nf:nf),
      & msq_struc67_5(8,-1:1,-1:1),msq_struc67_5v(8,-1:1,-1:1)
 
-************************************************************************
-* DEFINITIONS FOR EIKONALS WITH p6                                     *
-************************************************************************
+c***********************************************************************
+c DEFINITIONS FOR EIKONALS WITH p6                                     *
+c***********************************************************************
       real(dp)::
      & sub16_2(4),sub16_2v,
      & msq16_2(-nf:nf,-nf:nf),msq16_2v(-nf:nf,-nf:nf),
@@ -97,23 +94,19 @@
      & msq_struc26_5(8,-1:1,-1:1),msq_struc26_5v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub56_1(4),sub56_1v,
-     & msq56_1(-nf:nf,-nf:nf),msq56_1v(-nf:nf,-nf:nf),
+     & sub56_1(4),sub56_1v,msq56_1v(-nf:nf,-nf:nf),
      & msq_struc56_1(8,-1:1,-1:1),msq_struc56_1v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub76_2(4),sub76_2v,
-     & msq76_2(-nf:nf,-nf:nf),msq76_2v(-nf:nf,-nf:nf),
+     & sub76_2(4),sub76_2v,msq76_2v(-nf:nf,-nf:nf),
      & msq_struc76_2(8,-1:1,-1:1),msq_struc76_2v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub76_1(4),sub76_1v,
-     & msq76_1(-nf:nf,-nf:nf),msq76_1v(-nf:nf,-nf:nf),
+     & sub76_1(4),sub76_1v,msq76_1v(-nf:nf,-nf:nf),
      & msq_struc76_1(8,-1:1,-1:1),msq_struc76_1v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub56_2(4),sub56_2v,
-     & msq56_2(-nf:nf,-nf:nf),msq56_2v(-nf:nf,-nf:nf),
+     & sub56_2(4),sub56_2v,msq56_2v(-nf:nf,-nf:nf),
      & msq_struc56_2(8,-1:1,-1:1),msq_struc56_2v(8,-1:1,-1:1)
 
       real(dp)::
@@ -126,9 +119,9 @@
      & msq76_5(-nf:nf,-nf:nf),msq76_5v(-nf:nf,-nf:nf),
      & msq_struc76_5(8,-1:1,-1:1),msq_struc76_5v(8,-1:1,-1:1)
 
-************************************************************************
-* DEFINITIONS FOR EIKONALS WITH p5                                     *
-************************************************************************
+c***********************************************************************
+c DEFINITIONS FOR EIKONALS WITH p5                                     *
+c***********************************************************************
       real(dp)::
      & sub15_2(4),sub15_2v,
      & msq15_2(-nf:nf,-nf:nf),msq15_2v(-nf:nf,-nf:nf),
@@ -160,23 +153,19 @@
      & msq_struc25_7(8,-1:1,-1:1),msq_struc25_7v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub75_1(4),sub75_1v,
-     & msq75_1(-nf:nf,-nf:nf),msq75_1v(-nf:nf,-nf:nf),
+     & sub75_1(4),sub75_1v,msq75_1v(-nf:nf,-nf:nf),
      & msq_struc75_1(8,-1:1,-1:1),msq_struc75_1v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub65_2(4),sub65_2v,
-     & msq65_2(-nf:nf,-nf:nf),msq65_2v(-nf:nf,-nf:nf),
+     & sub65_2(4),sub65_2v,msq65_2v(-nf:nf,-nf:nf),
      & msq_struc65_2(8,-1:1,-1:1),msq_struc65_2v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub65_1(4),sub65_1v,
-     & msq65_1(-nf:nf,-nf:nf),msq65_1v(-nf:nf,-nf:nf),
+     & sub65_1(4),sub65_1v,msq65_1v(-nf:nf,-nf:nf),
      & msq_struc65_1(8,-1:1,-1:1),msq_struc65_1v(8,-1:1,-1:1)
 
       real(dp)::
-     & sub75_2(4),sub75_2v,
-     & msq75_2(-nf:nf,-nf:nf),msq75_2v(-nf:nf,-nf:nf),
+     & sub75_2(4),sub75_2v,msq75_2v(-nf:nf,-nf:nf),
      & msq_struc75_2(8,-1:1,-1:1),msq_struc75_2v(8,-1:1,-1:1)
 
       real(dp)::
@@ -190,4 +179,4 @@
      & msq_struc65_7(8,-1:1,-1:1),msq_struc65_7v(8,-1:1,-1:1)
 
 
-   
+
